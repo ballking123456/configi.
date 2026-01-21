@@ -1,0 +1,68 @@
+[
+  {
+    "clock": {
+      "format": "󰥔 {:%H:%M}"
+    },
+    "cpu": {
+      "format": "  {usage}%",
+      "tooltip": false
+    },
+    "height": 10,
+    "hyprland/workspaces": {
+      "all-outputs": true,
+      "disable-scroll": true,
+      "format": "",
+      "warp-on-scroll": false
+    },
+    "margin": "0 0 0",
+    "memory": {
+      "format": "  {}%"
+    },
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-left": [
+      "tray"
+    ],
+    "modules-right": [
+      "clock",
+      "pulseaudio",
+      "cpu",
+      "memory",
+      "temperature"
+    ],
+    "position": "bottom",
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon} {volume}% ",
+      "format-bluetooth-muted": "󰖁 {icon} {format_source}",
+      "format-icons": {
+        "default": [
+          " ",
+          " ",
+          "  "
+        ],
+        "headphone": " "
+      },
+      "format-muted": "󰖁 {format_source}",
+      "format-source-muted": " ",
+      "on-click": "pavucontrol",
+      "on-click-right": "overskride",
+      "scroll-step": 3
+    },
+    "temperature": {
+		 "hwmon-path": "/sys/class/hwmon/hwmon3/temp2_input",
+      "critical-threshold": 80,
+      "format": "{icon}{temperatureC}°C",
+      "format-icons": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "tray": {
+      "icon-size": 15,
+      "spacing": 10
+    }
+  }
+]

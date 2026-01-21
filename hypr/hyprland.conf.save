@@ -1,0 +1,17 @@
+$dir = ~/.config/hypr/configs
+
+source = $dir/monitors.conf
+
+source = $dir/soft.conf
+
+source = $dir/env.conf
+
+source = $dir/look.conf
+
+source = $dir/input.conf 
+
+source = $dir/binds.conf
+
+source = $dir/windowsrules.conf
+
+
