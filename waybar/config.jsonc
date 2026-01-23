@@ -1,0 +1,146 @@
+{
+		"height": 10,
+    "position": "bottom",
+    "margin": "0 0 0",
+		"clock": {
+      "tooltip": true,
+			"tooltip-format": "󰃮 {:%a, %d %b %Y}",
+			"format": "󰥔 {:%H:%M}",
+			"interval": 40
+    },
+    
+		"cpu": {
+      "format": "",
+      "format-alt": "  {usage}%",
+			"interval": 2,
+      "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+      "all-outputs": true,
+      "disable-scroll": true,
+      "format": "",
+      "warp-on-scroll": false
+		},
+
+    "memory": {
+      "format": "",
+      "format-alt": "  {used} Gb",
+			"interval": 2,
+      "tooltip": false
+    },
+    
+		"modules-center": [
+    ],
+    "modules-left": [
+      "custom/launcher",
+			"hyprland/workspaces"
+    ],
+    "modules-right": [
+      "clock",
+			"battery",
+			"backlight",
+			"power-profiles-daemon",
+			"group/first",
+      "cpu",
+      "memory",
+      "temperature",
+      "tray"
+    ],
+    "custom/launcher": {
+      "format": "",
+      "on-click": "wofi --show drun",
+      "tooltip": false
+    },
+		
+		"pulseaudio": {
+			"tooltip": false,
+      "format": "{icon}",
+      "format-bluetooth": "{icon} ",
+      "format-bluetooth-muted": "󰖁 ",
+      "format-icons": {
+        "default": [
+          "",
+          "",
+          ""
+        ],
+        "headphone": " "
+      },
+      "format-muted": "󰖁 {format_source}",
+      "format-source-muted": " ",
+      "scroll-step": 3
+    },
+		
+		"pulseaudio/slider": {
+			"min": 0,
+			"max": 100,
+			"rotate": 0,
+			"device": "pulseaudio",
+			"scroll-step": 1
+		},
+    
+		"group/first": {
+			"orientation": "horizontal",
+			"drawer": {
+				"transition-duration": 600,
+				"children-class": "not-power",
+				"transition-to-left": true,
+				"click-to-reveal": true
+			},
+		"modules": [ 
+			"pulseaudio",
+			"pulseaudio/slider" 
+		]
+		},
+
+		"temperature": {
+		 "hwmon-path": "/sys/class/hwmon/hwmon3/temp2_input",
+      "critical-threshold": 80,
+      "format": "{icon}",
+			"format-alt": "{icon}  {temperatureC}°C",
+      "format-icons": [
+        "",
+        "",
+        ""
+      ],
+			"interval": 3
+    },
+    
+		"tray": {
+      "tooltip": false,
+			"icon-theme": "Papirus-Nord",
+			"icon-size": 13,
+      "spacing": 10
+    },
+		
+		"backlight": {
+        "format": "{icon}",
+        "format-icons": [ "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪤", "󰪥" ],
+        "scroll-step": 3
+    },
+    "battery": {
+        "interval": 5,
+			  "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+				"format": "{icon}",
+        "format-full": "{icon}",
+        "format-charging": "{icon} 󱐋",
+        "format-plugged": "{icon} ",
+        "format-alt": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+		"power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    }
+}

@@ -1,9 +1,12 @@
 [font]
 size = 19
+normal.family = "JetBrainsMono Nerd Font"
 
 [general]
 import = ["colors.toml"]
 
 [window]
 opacity = 0.8
-
+padding.x = 20
+padding.y = 20
+decorations = "Buttonless"

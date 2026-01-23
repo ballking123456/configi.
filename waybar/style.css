@@ -1,99 +1,155 @@
 @import "colors.css";
 
 * {
-    font-family: "Ubuntu Nerd Font"; 
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 10px;
+  font-family: "Ubuntu Nerd Font Propo";
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 1px;
 }
 
+/* Waybar Window */
+
 window#waybar {
-    background: alpha(@background, 0.94);
-    border-radius: 15px 15px 0px 0px;
+  background: @background;
+  border-radius: 15 15 0 0px;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
+
 }
 
+/* Workspaces */
+
 #workspaces {
-    background: @surface_container_high;
-    border-radius: 15px;
-    padding: 5 10px;
-    margin: 6px 0px 6px 0px;
+  background: @surface_container_high;
+  border-radius: 15px;
+  margin: 6px 0px 6px 8px;
+	padding: 5 7 5 7px;
 }
 
 #workspaces button {
-    background: @primary;
-    margin: 4px 3px;
-    border-radius: 15px;
-    padding: 0 1 0px;
-    margin: 2px;
-    transition: all 0.1s ease-in-out;
+  background: @on_secondary_fixed_variant;
+  border-radius: 15px;
+  margin: 0 2 0 2px;
+	padding: 0 0 0 0px;
+  transition: all 0.1s ease-in-out;
 }
 
 #workspaces button:hover {
-    background: @primary;
-    padding: 0 13 0px;
+  background: @on_primary_container;
+  padding: 0 10 0 10px;
 }
 
 #workspaces button.active {
-    background: @primary;
-    padding: 0 13 0px;
+  background: @primary;
+	padding: 0 10 0 10px;
 }
 
+#custom-launcher {
+	color: @background;
+  background: @primary;
+  border-radius: 15px;
+  margin: 6px 0px 6px 15px;
+	padding: 0 7 2 7px;
+}
+
+/* System Information */
 
 #clock {
-    color: @primary;
-    margin-right: 10px;
+  color: @primary;
+  margin-right: 10px;
 }
-
-
-
-
-#cpu {
-    color: @error;
-}
-
 
 #network, #memory, #temperature, #cpu, #pulseaudio {
-    background: @surface_container_high;
-    padding: 5 10px;
-    margin: 6px 0px 6px 0px;
+  color: @on_primary_container;
+	background: @surface_container_high;
+  margin: 6 0 6 0px;
+	padding: 0 7 0 7px;
 }
-
 
 #temperature {
-			color: @on_secondary_container;
-			border-radius: 0px 20px 20px 0px;
-			margin-right: 15px;
+	border-radius: 0px 20px 20px 0px;
+	margin-right: 8px;
 }
 
-#memory {
-			color: @tertiary;
+#battery, #backlight, #power-profiles-daemon {
+  color: @on_primary_container;
+	background: @surface_container_high;
+  margin: 6 0 6 0px;
+	padding: 0 7 0 7px;
 }
 
+#battery {
+	border-radius: 20px 0px 0px 20px;
+}
+
+#power-profiles-daemon {
+	margin: 6 8 6 0px;
+	border-radius: 0px 20px 20px 0px;
+}
+
+/* Sound */
 
 #pulseaudio {
-		    	color: @on_primary_container;
-			border-radius: 20px 0px 0px 20px;
-
+  color: @on_primary_container;
+	border-radius: 20px 0px 0px 20px;
 }
 
+#pulseaudio-slider {
+  background: @surface_container_high;
+  margin: 6px 0px 6px 0px;
+}
+
+#pulseaudio-slider highlight {
+  background: @primary;
+}
+
+#pulseaudio-slider trough {
+  margin-top: -3px;
+  min-width: 70px;
+  min-height: 10px;
+  margin-bottom: -4px;
+  border-radius: 8px;
+  background: @on_secondary_fixed_variant;
+}
+
+#pulseaudio-slider slider {
+  background: #A1BDCE;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Tray */
 
 #tray {
-			margin-left: 10px;
-			background: @surface_container_high;
-			border-radius: 40px;
-			padding: 5 12px;
-			margin: 6px 0px 6px 15px;
-
+	  background: @surface_container_high;
+	  border-radius: 40px;
+		margin: 6px 15px 6px 0px;
+		padding: 0 7 0 7px;
 }
 
-#tray > .passive {
-			-gtk-icon-effect: dim;
+#tray menu * {
+    min-height: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: @on_primary_container;
+    background: @background;
+    border: @background;
 }
 
-#tray > .needs-attention {
-			-gtk-icon-effect: highlight;
+#tray menu separator {
+    color: @background;
+    background: @background;
+    min-height: 0px;
+    border: @background;
+}
+
+/* Tooltips */
+
+tooltip {
+        background: @background;
+        color: @on_primary_container;
+        font-size: 13px;
+        border-radius: 20px;
 }
