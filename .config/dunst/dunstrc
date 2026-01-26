@@ -46,25 +46,25 @@ force_xinerama = false
 mouse_left_click = close_current
 mouse_middle_click = do_action, close_current
 mouse_right_click = close_all
-frame_color = "#ffb59f"
-highlight = "#ffb59f"
-separator_color= "#a08c87"
+frame_color = "#a5c8fe"
+highlight = "#a5c8fe"
+separator_color= "#8d9199"
 [experimental]
 per_monitor_dpi = false
 [urgency_low]
 timeout = 3
-background = "#1a110f"
-foreground = "#f1dfda"
-highlight = "#723522"
+background = "#111318"
+foreground = "#e1e2e9"
+highlight = "#214876"
 [urgency_normal]
 timeout = 6
-background = "#1a110f"
-foreground = "#f1dfda"
-highlight = "#723522"
+background = "#111318"
+foreground = "#e1e2e9"
+highlight = "#214876"
 [urgency_critical]
 timeout = 0
-background = "#1a110f"
-foreground = "#f1dfda"
+background = "#111318"
+foreground = "#e1e2e9"
 highlight = "#ffb4ab"
 
 
