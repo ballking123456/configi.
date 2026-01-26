@@ -1,0 +1,17 @@
+2026/01/26-16:19:32.816 93c Reusing MANIFEST /home/sicsick/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/01/26-16:19:32.824 93c Recovering log #70
+2026/01/26-16:19:32.824 93c Level-0 table #73: started
+2026/01/26-16:19:32.835 93c Level-0 table #73: 40529 bytes OK
+2026/01/26-16:19:32.836 93c Recovering log #73
+2026/01/26-16:19:32.836 93c Reusing old log /home/sicsick/.config/vesktop/sessionData/Local Storage/leveldb/000073.log 
+2026/01/26-16:19:32.838 93c Delete type=0 #70
+2026/01/26-16:19:32.838 93c Delete type=2 #74
+2026/01/26-16:19:32.839 96a Compacting 4@0 + 1@1 files
+2026/01/26-16:19:32.841 96a Generated table #74@0: 44 keys, 33603 bytes
+2026/01/26-16:19:32.842 96a Compacted 4@0 + 1@1 files => 33603 bytes
+2026/01/26-16:19:32.843 96a compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/26-16:19:32.844 96a Delete type=2 #63
+2026/01/26-16:19:32.844 96a Delete type=2 #65
+2026/01/26-16:19:32.844 96a Delete type=2 #69
+2026/01/26-16:19:32.844 96a Delete type=2 #71
+2026/01/26-16:19:32.844 96a Delete type=2 #73
