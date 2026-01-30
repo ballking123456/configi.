@@ -1,0 +1,8 @@
+format = '''
+$directory[ ](green bold) 
+'''
+
+add_newline = false
+
+[package]
+disabled = true
