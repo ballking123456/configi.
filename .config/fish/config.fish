@@ -1,3 +1,7 @@
 if status is-interactive
-# Commands to run in interactive sessions can go here
+    starship init fish | source 
+    alias s='yay -Syu --needed -q'
+    alias c='clear'
+    alias e='exit'
 end
+
