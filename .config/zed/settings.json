@@ -1,35 +1,116 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "vim_mode": true,
-  "unnecessary_code_fade": 0.5,
-  "cursor_shape": "bar",
-  "cursor_blink": false,
-  "agent_ui_font_size": 18.0,
-  "ui_font_family": ".SystemUIFont",
-  "buffer_line_height": "comfortable",
-  "buffer_font_weight": 550.0,
-  "buffer_font_family": "Consolas",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Material Icon Theme",
-    "dark": "Base Charmed Icons"
-  },
-  "ui_font_size": 18.0,
-  "buffer_font_size": 23.0,
-  "theme": {
-    "mode": "dark",
-    "light": "Ayu Light",
-    "dark": "Catppuccin Espresso (Blur) [Light]",
-  },
+    "git_panel": { "button": false },
+    "terminal": { "button": false },
+    "outline_panel": { "button": false },
+    "collaboration_panel": { "button": false },
+    "search": { "button": false },
+    "show_edit_predictions": false,
+    "debugger": { "button": false },
+    "agent": { "button": false },
+    "notification_panel": { "button": false },
+
+    "base_keymap": "VSCode",
+    "vim_mode": true,
+
+    "auto_update": false,
+
+    "tab_size": 4,
+    "auto_indent": true,
+    "auto_indent_on_paste": true,
+
+    "cursor_shape": "bar",
+    "cursor_blink": false,
+
+    "lsp_document_colors": "background",
+
+    "agent_ui_font_size": 18.0,
+    "ui_font_family": ".SystemUIFont",
+    "unnecessary_code_fade": 0.5,
+    "buffer_font_weight": 550.0,
+    "buffer_font_family": "Consolas",
+    "buffer_line_height": null,
+
+    "when_closing_with_no_tabs": "keep_window_open",
+    "close_on_file_delete": true,
+    "restore_on_startup": "last_session",
+
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+
+    "icon_theme": {
+        "mode": "dark",
+        "light": "",
+        "dark": "Base Charmed Icons",
+    },
+
+    "ui_font_size": 18.0,
+    "buffer_font_size": 23.0,
+    "current_line_highlight": "none",
+
+    "theme": {
+        "mode": "dark",
+        "light": "Catppuccin Latte (Blur) [Heavy]",
+        "dark": "Catppuccin Espresso (Blur) [Light]",
+    },
+    "theme_overrides": {
+        "Catppuccin Espresso (Blur) [Light]": {
+            "border.variant": "#00000000",
+            "border": "#00000000",
+            // "title_bar.background": "#00000000",
+            "panel.focused_border": "#00000000",
+            "editor.active_line.background": "#c6a0f640",
+            "editor.active_line_number": "#c6a0f6",
+            "players": [{ "cursor": "#c6a0f6" }],
+        },
+    },
+
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_project_items": false,
+        "show_menus": false,
+        "show_branch_icon": true,
+    },
+
+    "tab_bar": {
+        "show": false,
+    },
+    "toolbar": {
+        "quick_actions": false,
+    },
+
+    "status_bar": {
+        "active_language_button": false,
+        "cursor_position_button": false,
+        "line_endings_button": false,
+        "experimental.show": false,
+    },
+
+    "project_panel": {
+        // file-manager
+        "dock": "right",
+        "default_width": 300,
+        "hide_root": true,
+        "auto_fold_dirs": true,
+        "starts_open": true,
+        "git_status": true,
+        "sticky_scroll": true,
+        "scrollbar": { "show": "never" },
+        "indent_guides": { "show": "always" }, // show lines on folders.
+    },
+
+    "file_finder": {
+        "modal_max_width": "small",
+        "include_ignored": "smart",
+    },
+
+    "scrollbar": { "show": "never" },
+
+    "gutter": {
+        "min_line_number_digits": 0,
+        "folds": false,
+    },
+
+    "indent_guides": { "enabled": true }, // guide lines between code blocks
 }
