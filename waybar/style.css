@@ -1,0 +1,30 @@
+* {
+  font-family: "JetBrains Mono";
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+window#waybar {
+    background: #000000;
+}
+
+/* Workspace Buttons */
+#workspaces {
+  background: #000000;
+}
+
+#workspaces button label { 
+  color: #aaaaaa;
+}
+
+#workspaces button.active label {
+  color: #ffffff;
+}
+
+#clock, #battery, #pulseaudio, #tray, #language, #weather {
+  color: #ffffff;
+  padding: 0 10px;
+}

@@ -1,0 +1,45 @@
+[font]
+size = 15
+normal.family = "JetBrainsMono Nerd Font"
+
+[window]
+padding.x = 20
+padding.y = 20
+decorations = "Buttonless"
+
+[cursor]
+blink_interval = 300
+blink_timeout = 0
+
+[cursor.style]
+shape = "Beam"
+blinking = "On"
+
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+
+[colors.cursor]
+background = '#ffffff'
+foreground = '#000000'
+
+[colors.normal]
+black = '#000000'
+red = '#ffffff'
+green = '#ffffff'
+yellow = '#ffffff'
+blue = '#ffffff'
+magenta = '#ffffff'
+cyan = '#ffffff'
+white = '#ffffff'
+
+[colors.bright]
+black = '#808080'
+red = '#ffffff'
+green = '#ffffff'
+yellow = '#ffffff'
+blue = '#ffffff'
+magenta = '#ffffff'
+cyan = '#ffffff'
+white = '#ffffff'
+

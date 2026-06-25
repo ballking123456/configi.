@@ -1,0 +1,17 @@
+[main]
+font=JetBrainsMono Nerd Font:size=12
+terminal=alacritty
+
+width=35
+lines=6
+
+[colors]
+background=000000ff
+text=ffffffff
+selection=ffffffff
+selection-text=000000ff
+border=000000ff
+
+[border]
+width=0
+radius=0
