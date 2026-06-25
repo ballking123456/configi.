@@ -1,0 +1,85 @@
+{
+    "height": 10,
+    "position": "bottom",
+    "margin": "0 0 0 0",
+
+
+	"clock": {
+      "tooltip": true,
+	  "tooltip-format": "󰃮 {:%a, %d %b %Y}",
+	  "format": "{:%H:%M}",
+	  "interval": 40
+    },
+    
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "magic": "0"
+      },
+      "show-special": true,
+      "special-visible-only": true
+    },
+
+    "modules-center": [
+    ],
+    "modules-left": [
+	  "hyprland/workspaces"
+    ],
+    "modules-right": [
+      	"clock",
+        "custom/separator",
+	    "hyprland/language",
+        "custom/separator",
+		"pulseaudio",
+        "custom/separator",
+		"battery",
+        "custom/separator",
+        "tray"
+    ],
+	"pulseaudio": {
+	  "tooltip": false,
+      "format": "audio: {volume}%",
+      "format-bluetooth": "bt: {volume}%",
+      "format-bluetooth-muted": "bt: 0%",
+      "format-muted": "audio: 0%",
+      "scroll-step": 3
+    },
+
+    "custom/separator": {
+        "format": "|"
+    },
+		
+	"tray": {
+      "tooltip": false,
+	  "icon-theme": "Papirus-Nord",
+	  "icon-size": 13,
+      "spacing": 10
+    },
+		
+    "battery": {
+      "interval": 5,
+	  "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 15
+      },
+
+	  "format": "battery: {capacity}%",
+      "format-full": "battery full",
+      "format-charging": "charge: {capacity}%"
+    },
+
+    "hyprland/language": {
+      "format-en": "kb: us",
+      "format-ru": "kb: ru"
+    }
+}
